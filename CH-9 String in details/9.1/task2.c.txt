@@ -1,0 +1,21 @@
+#include<stdio.h>
+main()
+{
+	int i;
+	char name[50];
+	
+	printf("enter the upper case character name=");
+	scanf("%s",&name);
+	
+	for(i=0;name[i]!='\0';i++)
+	{
+		if(name[i]>=65 && name[i]<=90)
+		{
+			name[i]=name[i]+32;
+			
+		}
+	}
+	printf("the lower case character is=%s",name);
+}
+
+

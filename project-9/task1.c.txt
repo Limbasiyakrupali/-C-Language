@@ -1,0 +1,31 @@
+#include<stdio.h>
+void main()
+{
+	int i;
+	FILE *ptr1,*ptr2;
+	
+	ptr1=fopen("even.txt","w");
+	ptr2=fopen("odd.txt","w");
+	
+	if(ptr1==NULL)
+	{
+		printf("file cnanot created or opened");
+		
+	}
+	else
+	{
+		printf("file opened successfully");
+		
+		for(i=50;i<70;i++)
+		{
+			if(i%2==0)
+			{
+				fprintf(ptr1,"%d\n",i);
+			}
+			else
+			{
+				fprintf(ptr2,"%d\n",i);
+			}
+		}
+	}
+}

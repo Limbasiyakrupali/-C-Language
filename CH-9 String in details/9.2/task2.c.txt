@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+int i;
+char mail[50]="krupali89@gmail.com",pass[30]="12345",email[30],lpass[30];
+printf("Enter your email-id=");
+scanf("%s",email);
+printf("Enter your password=");
+scanf("%s",lpass);
+if(strcmp(mail,email)==0)
+{
+printf("Login successful...");}
+else if(strcmp(pass,lpass)==0)
+{
+printf("Login successful...");
+}
+else
+{
+printf("Login Faild...\nInvalid Credentials...");
+}
+
+
+
+
+

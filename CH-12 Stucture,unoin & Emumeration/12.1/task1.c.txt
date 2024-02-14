@@ -1,0 +1,66 @@
+#include<stdio.h>
+struct student{
+	int Id,Age;
+	char name[20],course[20],city[20],school[20],standard[20];
+};
+
+void main()
+{
+	struct student s1,s2,s3;
+	
+	s1.Id=5273;
+	strcpy(s1.name,"krupali");
+	s1.Age=18;
+	strcpy(s1.course,"flutter");
+	strcpy(s1.city,"Rajkot");
+	strcpy(s1.standard,"collage f.y.");
+	strcpy(s1.school,"Red & White");
+	
+	printf("Id=%d\n",s1.Id);
+	printf("Nmae=%s\n",s1.name);
+	printf("Age=%d\n",s1.Age);
+	printf("course=%s\n",s1.course);
+	printf("city=%s\n",s1.city);
+	printf("standard=%s\n",s1.standard);
+	printf("school=%s\n",s1.school);
+	
+	printf("\n");
+	
+	s2.Id=5246;
+	strcpy(s2.name,"krishna");
+	s2.Age=18;
+	strcpy(s2.course,"full stack");
+	strcpy(s2.city,"Rajkot");
+	strcpy(s2.standard,"collage f.y.");
+	strcpy(s2.school,"Red & White");
+	
+	printf("Id=%d\n",s2.Id);
+	printf("Nmae=%s\n",s2.name);
+	printf("Age=%d\n",s2.Age);
+	printf("course=%s\n",s2.course);
+	printf("city=%s\n",s2.city);
+	printf("standard=%s\n",s2.standard);
+	printf("school=%s\n",s2.school);
+	
+	printf("\n");
+	
+	s3.Id=5244;
+	strcpy(s3.name,"hiral");
+	s3.Age=18;
+	strcpy(s3.course,"flutter");
+	strcpy(s3.city,"Rajkot");
+	strcpy(s3.standard,"collage f.y.");
+	strcpy(s3.school,"Red & White");
+	
+	printf("Id=%d\n",s3.Id);
+	printf("Nmae=%s\n",s3.name);
+	printf("Age=%d\n",s3.Age);
+	printf("course=%s\n",s3.course);
+	printf("city=%s\n",s3.city);
+	printf("standard=%s\n",s3.standard);
+	printf("school=%s\n",s3.school);
+
+}
+
+
+

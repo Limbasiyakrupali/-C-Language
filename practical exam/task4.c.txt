@@ -1,0 +1,46 @@
+#include<stdio.h>
+void main()
+{
+	int i,j,sum=0,a[3][3];
+	
+	printf("enter any elements=\n");
+	
+	for(i=0;i<=3;i++)
+	{
+		for(j=0;j<=3;j++)
+		{
+			printf("a[%d][%d]=",i,j);
+			scanf("%d",&a[i][j]);
+		}
+		printf("\n");
+	}
+	for(i=0;i<=3;i++)
+	{
+		for(j=0;j<=3;j++)
+		{
+			if(i==0 || j==0 && i==4 || j==4)
+			{
+				printf("%d",&a[i][j]);
+			}
+			else
+			{
+				printf(" ");
+			}
+		}
+		printf("\n");
+	}
+	for(i=0;i<=3;i++)
+	{
+		for(j=0;j<=3;j++)
+		{
+			if(i==0 || i==5-1 && j==0 || j==5-1)
+			{
+				sum=sum+a[i][j];
+			}
+		}
+		printf("\n");	
+	}
+	printf("the total of boundery elements is=%d\n",sum);
+}
+
+

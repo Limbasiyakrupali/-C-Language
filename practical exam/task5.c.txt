@@ -1,0 +1,30 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,c;
+	
+	printf("enter the value a=");
+	scanf("%d",&a);
+	printf("enter the value b=");
+	scanf("%d",&b);
+	printf("enter the value c=");
+	scanf("%d",&c);
+	
+	(a==b && a==c)
+				?printf("all values are same",a)
+				:(a==b)
+						?printf("a and b are same",a)
+						:(a==c)
+								?printf("a and c are same",c)
+								:(b==c)
+										?printf("b are same",b)
+										:(a>b)
+												?printf("a is maxmum",a)
+												:(a>c)
+														?printf("a is maximum",a)
+														:(b>c)
+														 		?printf("b is maximum",b)
+																:printf("c is maximum",c);
+}
+
+

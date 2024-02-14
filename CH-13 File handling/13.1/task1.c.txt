@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+main()
+{
+	char f;
+	FILE *ptr1,*ptr2;
+	
+	ptr1=fopen("krupali.txt","r");
+	ptr2=fopen("krupali2.txt","w");
+	
+	f=fgetc(ptr1);
+	while(f!=EOF)
+	{
+		fputc(f,ptr2);
+		f=fgetc(ptr1);
+	}
+	
+	fclose(ptr1);
+	fclose(ptr2);
+	
+}
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+
+#include<stdio.h>
+void main()
+{
+	int i;
+	int a,b,c;
+	int *k,*l,*m;
+	
+	
+	printf("enter the value of a=");
+	scanf("%d",&a);
+	
+	printf("enter the value of b=");
+	scanf("%d",&b);
+	
+
+	
+	
+	printf("the old value is=%d\n",a);
+	printf("the old value is=%d\n",b);
+	
+	k=&a;
+	l=&b;
+	m=&c;
+	
+	*m=*k;
+	*k=*l;
+	*l=*m;
+	
+	printf("the new value is=%d\n",a);
+	printf("the new value is=%d\n",b);
+	
+}

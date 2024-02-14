@@ -1,0 +1,59 @@
+#include<stdio.h>
+struct student {
+	
+	int Rollno,chemistry,mathematics,physics;
+	char Name[20];
+};
+
+void main()
+{
+	int i;
+	
+	struct student s[5];
+	
+	for(i=0;i<5;i++)
+	{
+		printf("Enter details students %d:\n",i+1);
+		
+		printf("enter your rollno.=");
+		scanf("%d",&s[i].Rollno);
+		printf("enter your Name=");
+		scanf("%s",&s[i].Name);
+		printf("enter your chemistry marks=");
+		scanf("%d",&s[i].chemistry);
+		printf("enter your mathematics marks=");
+		scanf("%d",&s[i].mathematics);
+		printf("enter your physics=");
+		scanf("%d",&s[i].physics);
+		
+		printf("\n");
+	}
+	
+	
+	
+
+	float average,persentage,total;
+	
+	
+	
+    persentage=average*3/100;
+    
+    for(i=0;i<5;i++)
+	{
+		printf("Rollno=%d\n",s[i].Rollno);
+		printf("Name=%s\n",s[i].Name);
+		printf("chemistry=%d\n",s[i].chemistry);
+		printf("mathematics=%d\n",s[i].mathematics);
+		printf("physics=%d\n",s[i].physics);
+		total=s[i].chemistry+s[i].mathematics+s[i].physics;
+		printf("Total=%f\n",total);
+		average=(s[i].chemistry+s[i].mathematics+s[i].physics)/(3);
+		printf("persentage=%f\n",average);
+			
+	}
+	
+    
+    
+	
+	
+}

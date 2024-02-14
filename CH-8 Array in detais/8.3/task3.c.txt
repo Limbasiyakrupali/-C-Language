@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+int i,j,a[30][30],r,c,sum=0;
+
+clrscr();
+
+printf("Enter a array's row=");
+scanf("%d",&r);
+printf("Enter a array's column=");
+scanf("%d",&c);
+
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("a[%d][%d]=",i,j);
+scanf("%d",&a[i][j]);
+}
+printf("\n");
+}
+
+for(i=0;i<r;i++)
+{
+for(j=0;j<c;j++)
+{
+printf("%d",a[i][j]);
+}
+printf("\n");
+}
+
+for(i=0,j=0;j<r;j++,i++)
+{
+sum=sum+a[i][j];
+}
+printf("sum of diagonal elements of an array=%d",sum);
+getch();
+}

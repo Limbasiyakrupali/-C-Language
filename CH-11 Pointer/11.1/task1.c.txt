@@ -1,0 +1,27 @@
+#include<stdio.h>
+void main()
+{
+	int i,len,array[20];
+	int *ptrname[20];
+	
+	printf("enter the size of array=");
+	scanf("%d",&len);
+	
+	for(i=0;i<len;i++)
+	{
+		printf("the elements of a[%d]=",i);
+		scanf("%d",&array[i]);
+	}
+	for(i=0;i<len;i++)
+	{
+		ptrname[i]=&array[i];
+	}
+	for(i=0;i<len;i++)
+	{
+		array[i]=(*ptrname[i])*(*ptrname[i]);
+		printf("the square of array is=%d\n",array[i]);
+	}
+}
+
+
+

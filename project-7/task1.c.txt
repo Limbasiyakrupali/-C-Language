@@ -1,0 +1,85 @@
+#include<stdio.h>
+
+void main()
+{
+	int k,l,ch,i;
+	
+	for(i=ch;i<=0;ch++)
+	{	
+		
+	printf("Press 1 for +\n");
+	printf("Press 2 for -\n");
+	printf("Press 3 for *\n");
+	printf("Press 4 for /\n");
+	printf("Press 5 for %%\n");
+	printf("Press 0 for the exit\n");
+	
+		printf("enter your choice=");
+		scanf("%d",&ch);
+	
+		if(ch==0)
+		{
+			break;
+		}
+		else if(ch>6)
+		{
+			printf("Enter valid Number....");
+		}
+		
+		printf("Enter the first number= ");
+		scanf("%d",&k);
+		printf("Enter the second number= "); 
+		scanf("%d",&l);
+	
+		switch(ch)
+		{
+			case 1 :
+				printf("Addition Of %d and %d is = %d\n\n",k,l,sum(k,l));
+				break;
+			
+			case 2 :
+				printf("Substriction Of %d and %d is = %d\n\n",k,l,sub(k,l));
+				break;
+			
+			case 3 :
+				printf("multiplication Of %d and %d is = %d\n\n",k,l,multi(k,l));
+				break;
+			
+			case 4 :
+				printf("division Of %d and %d is = %d\n\n",k,l,divi(k,l));
+				break;
+			
+			case 5 :
+				printf("module Of %d and %d is = %d\n\n",k,l,modul(k,l));
+				break;
+			
+			default :
+				printf("Invalid number");
+		}
+		
+	}
+}
+int sum(int p,int q)
+{
+	return p + q ;
+}
+
+int sub(int p,int q)
+{
+	return p - q ;
+}
+
+int multi(int p,int q)
+{
+	return p * q ;
+}
+
+int divi(int p,int q)
+{
+	return p / q ;
+}
+
+int modul(int p ,int q)
+{
+	return p % q ;
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+division();
+division()
+{	
+	division();	
+}
+main()
+{
+	int number;
+	
+	printf("enter the number=");
+	scanf("%d",&number);
+	
+	if(number%3==0 && number%5==0)
+	{
+		printf("the number is divisable by 3 and 5");
+	}
+	else
+	{
+		printf("the number is not divisable by 3 and 5");
+	}
+	
+	
+	
+}
+
+
+
